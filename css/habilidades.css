@@ -1,0 +1,150 @@
+@import url(root.css);
+
+.habilidades {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    gap: 1.5vw;
+    width: 78vw;
+}
+
+.linha1, .linha2, .linha3 {
+    background-color: var(--cor-secundaria); 
+    padding: 1.6875vw;
+    border-radius: 24px;
+    box-shadow: var(--sombra-blocos-box-shadow);
+}
+
+.linha2, .linha3 {
+    margin-top: 24px;
+}
+
+.titulo__minhastecnologias {
+    text-align: center;
+    font: var(--padrao-texto-titulo);
+    color: var(--detalhes);
+    text-shadow: var(--sombra-basica-text-shadow);
+}
+
+.descricao__minhastecnologias {
+    font: var(--padrao-texto);
+    color: var(--digitacao);
+}
+
+.botao__container {
+    display: flex;
+    justify-content: center;
+}
+
+.botao__tecnologias {
+    display: flex;
+    background-color: var(--detalhes);
+    color: #ffffff;
+    font: var(--padrao-texto-botao);
+    text-shadow: var(--sombra-basica-text-shadow);
+    box-shadow: var(--sombra-botao-box-shadow);
+    text-decoration: none;
+    justify-content: center;
+    margin-top: 130px;
+    text-align: center;
+    align-items: center;
+    border-radius: 48px;
+    width: 100px;
+    height: 20px;
+    padding: 28px 52px;
+}
+
+.botao__container-pequeno {
+    display: none;
+}
+
+@media screen and (max-width: 1160px) {
+    .habilidades {
+        display: flex;
+        flex-direction: column;
+        gap: 3.448275862vw;
+    }
+
+    .blocos-skills {
+        display: flex;
+        justify-content: center;
+        order: 2;
+        gap: 12.068965517vw;
+    }
+
+    .linha2, .linha3 {
+        margin-top: 0;
+    }
+    
+    .titulo__minhastecnologias, .descricao__minhastecnologias {
+        order: 1;
+    }
+
+    .minhastecnologias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao__container {
+        display: none;
+    }
+
+    .botao__container-pequeno {
+        display: flex;
+        justify-content: center;
+        order: 3;
+    }
+
+    .botao__tecnologias {
+        margin-top: 16px;
+    }
+}
+
+@media screen and (max-width: 918px) {
+    .icones {
+        width: 9vw;
+        height: 8vw;
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .titulo__minhastecnologias {
+        font: var(--_360-texto-titulo);
+    }
+
+    .descricao__minhastecnologias {
+        font: var(--_360-texto);
+    }
+
+    .botao__tecnologias {
+        font: var(--_360-texto-botao);
+        padding: 14px 16px 14px 16px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .botao__tecnologias {
+        padding: 2.666666667vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .habilidades {
+        gap: 4.6875vw;
+    }
+
+    .blocos-skills {
+        gap: 4.6875vw;
+    }
+
+    .linha1, .linha2, .linha3 {
+        padding: 5.3125vw;
+    }
+
+    .botao__tecnologias {
+        padding: 2.5vw 1.875vw;
+    }
+}

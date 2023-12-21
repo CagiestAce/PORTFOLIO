@@ -1,0 +1,51 @@
+@import url(root.css);
+
+.sobremim {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    gap: 1.5vw;
+    width: 78vw;
+}
+
+.texto__sobremim {
+    width: 100%;
+}
+
+.titulo__sobremim {
+    font: var(--padrao-texto-titulo);
+    text-align: center;
+    color: var(--detalhes);
+    text-shadow: var(--sombra-basica-text-shadow);
+}
+
+.descricao__sobremim {
+    font: var(--padrao-texto);
+    color: var(--digitacao);
+}
+
+@media screen and (max-width: 1160px) {
+    .imagem__notebook {
+        width: 50vw;
+    }
+
+    .sobremim {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem__ia {
+        width: 60.344827586vw;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .titulo__sobremim {
+        font: var(--_360-texto-titulo);
+    }
+
+    .descricao__sobremim {
+        font: var(--_360-texto);
+    }
+}

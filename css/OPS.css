@@ -1,0 +1,45 @@
+@import url(root.css);
+
+body, html {
+    background-color: var(--fundo);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container__ops {
+    text-align: center;
+    width: 798px;
+}
+
+.titulo__ops {
+    color: var(--detalhes);
+    font: var(--ops-texto-titulo-grande);
+    text-shadow: var(--sombra-basica-text-shadow);
+}
+
+.texto__ops {
+    color: var(--digitacao);
+    font: var(--ops-texto-grande);
+    text-align: center;
+    align-self: center;
+}
+
+.button__ops {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: var(--detalhes);
+    color: #fff;
+    font: var(--padrao-texto-botao);
+    box-shadow: var(--sombra-botao-box-shadow);
+    text-decoration: none;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 24px;
+    margin-top: 16px;
+}

@@ -1,0 +1,50 @@
+@import url(root.css);
+
+.banner {
+  background: var(--fundo);
+  background: linear-gradient(0deg, var(--fundo) 0%, var(--cor-secundaria) 50%);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* border-bottom: solid var(--digitacao2) 1px; */
+}
+
+.container__banner {
+  text-align: center;
+  width: 50vw;
+  padding-left: 30px;
+}
+
+.nome__banner {
+  font: var(--padrao-texto-nome-topo);
+  color: var(--digitacao2);
+}
+  
+.descricao__banner {
+  font: var(--padrao-texto-principal);
+  color: var(--digitacao2);
+}
+
+@media screen and (max-width: 918px) {
+
+  .imagem__notebook {
+    display: none;
+  }
+
+  .container__banner {
+    width: 80vw;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .nome__banner {
+    font: var(--_360-texto-nome-topo);
+  }
+
+  .descricao__banner {
+    font: var(--_360-texto-principal);
+  }
+}

@@ -1,0 +1,156 @@
+@import url(root.css);
+
+.modal {
+    background-color: var(--fundo);
+    border: solid 2px var(--digitacao2);
+    width: 80vw;
+    height: 80vh;
+    border-radius: 24px;
+}
+
+.modal::backdrop {
+    background-color: #3b3b40; 
+    opacity: .2;
+    
+}
+
+form input, form textarea {
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+form input:focus, form textarea:focus {
+    border-radius: 24px;
+}
+
+.close-button {
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    gap: 150px;
+    margin: 2vw;
+}
+
+.texto__modal {
+    width: 50ch;
+}
+
+.titulo__modal {
+    color: var(--detalhes);
+    font: var(--padrao-texto-titulo);
+    text-shadow: var(--sombra-basica-text-shadow);
+}
+
+.paragrafo__modal {
+    color: var(--digitacao);
+    font: var(--padrao-texto);
+    padding-top: 20px;
+}
+
+.form {
+    display: grid;
+    grid-template-areas: 
+    "nome sobrenome"
+    "email email"
+    "mensagem mensagem";
+    row-gap: 18px;
+    column-gap: 14px;
+}
+
+.form__email, .form__mensagem, .form__nome, .form__sobrenome {
+    font: var(--padrao-texto);
+    border: solid var(--digitacao2) 1px;
+}
+
+.form__nome {
+    grid-area: nome;
+}
+.form__sobrenome {
+    grid-area: sobrenome;
+}
+.form__email {
+    grid-area: email;
+}
+.form__mensagem {
+    grid-area: mensagem;
+}
+
+.button-modal {
+    justify-self: center;
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    color: #ffff;
+    font: var(--padrao-texto-botao);
+    text-shadow: var(--sombra-basica-text-shadow);
+    box-shadow: var(--sombra-botao-box-shadow);
+    background-color: var(--detalhes);
+    border: none;
+    text-decoration: none;
+    border-radius: 48px;
+    width: 100px;
+    height: 20px;
+    padding: 30px 80px;
+}
+
+@media screen and (max-width: 1240px) {
+    .modal {
+        height: 92vh;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 10px;
+        margin: 0.5vw;
+    }
+
+    .texto__modal {
+        margin: 0 auto;
+        width: 70vw; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .modal {
+        width: 80vw;
+        height: 65vh;
+    }
+
+    .titulo__modal {
+        font: var(--_360-texto-titulo);
+        text-align: center;
+    }
+    
+    .paragrafo__modal {
+        font: var(--_360-texto);
+        text-align: center;
+    }
+
+    form input, form textarea {
+        padding: 10px;
+        transition: all 0.5s;
+    }
+
+    .form__email, .form__mensagem, .form__nome, .form__sobrenome {
+        font: var(--_360-texto);
+    }
+
+    .button-modal {
+        font: var(--_360-texto-botao);
+        width: 50px;
+        height: 20px;
+        padding: 20px 60px;
+    }
+}

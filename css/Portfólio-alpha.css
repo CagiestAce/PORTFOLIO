@@ -1,0 +1,20 @@
+@import url(root.css);
+
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1; 
+    }
+}
+
+body {
+    background-color: var(--fundo);
+    scroll-behavior: smooth;
+}
+
+.fadein {
+  opacity: 0;
+  animation: fadein 1.5s ease-in-out forwards;
+}

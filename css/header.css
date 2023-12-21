@@ -1,0 +1,161 @@
+@import url(root.css);
+header {
+    background-color: var(--cor-secundaria);
+    border-bottom: solid var(--digitacao2) 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+}
+
+/* Logos */
+.logo-grande {
+    display: flex;
+}
+
+.logo-pequeno {
+    display: none;
+}
+/* Logos */
+
+/* Menus */
+.menu__container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 24px;
+    color: var(--digitacao2);
+    font: var(--padrao-texto-menu);
+}
+
+    .menu {
+        color: var(--digitacao2);
+        font: var(--padrao-texto-menu);
+        cursor: pointer;
+        background: none;
+        padding: 0;
+        border: none;
+    }
+
+        .menu:hover {
+            filter: blur(2px);
+            transition: 1s;
+        }
+
+        .home {
+            cursor: default;
+            filter: blur(2px);
+        }
+/* Menus */
+
+/* Tema e Idioma */
+.opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    gap: 6px;
+    margin-left: 24px;
+}
+
+    .idioma {
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        padding-right: 10px;
+        color: var(--digitacao2);
+        font: var(--padrao-texto-menu);
+    }
+
+    .tema {
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+        .tema__icon:hover, .idioma:hover {
+            filter: blur(2px);
+            transition: 1s;
+        }
+        #icon {
+            width: 28px;
+            height: 28px;
+        }
+/* Tema e Idioma */
+
+@media screen and (max-width: 1160px) {
+    .logo-grande {
+        display: none;
+    }
+    
+    .logo-pequeno {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .logo-pequeno {
+        height: 40px;
+    }
+
+    .menu__container {
+        font: var(--_360-texto-menu);
+        gap: 15px;
+    }
+
+    .menu {
+        font: var(--_360-texto-menu);
+    }
+
+    .opcoes {
+        margin-left: 0;
+    }
+
+    .tema__icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .idioma {
+        font: var(--_360-texto-menu);
+    }
+
+    #icon {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .home {
+        display: none;
+    }
+
+    .idioma {
+        font: var(--_360-texto-menu);
+    }
+
+    .tema {
+        margin-top: 3px;
+    }
+
+    #icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    .tema__container {
+        gap: 6px;
+    }
+
+    .opcoes {
+        gap: 3px;
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+}

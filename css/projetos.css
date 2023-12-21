@@ -1,0 +1,109 @@
+@import url(root.css);
+
+.projetos__container {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    flex-direction: column;
+    width: 78vw;
+    align-items: center;
+}
+
+.titulo__projetos {
+    text-align: center;
+    font: var(--padrao-texto-titulo);
+    color: var(--detalhes);
+    text-shadow: var(--sombra-basica-text-shadow);
+}
+
+.projetos {
+    justify-content: center;
+    display: flex;
+    width: 78vw;
+    margin-top: 18px;
+    gap: 3vw;
+    font: var(--padrao-texto-projetos);
+    color: var(--digitacao2);
+}
+
+.coluna4, .coluna5, .coluna6 {
+    margin: 30px;
+}
+
+.linha1__proj, .linha2__proj {
+    display: flex;
+    padding: 2.625vw 6.5vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    box-shadow: var(--sombra-blocos-box-shadow);
+}
+
+.linha2__proj {
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1160px) {
+    .projetos {
+        gap: 6.034482759vw;
+    }
+
+    .coluna4, .coluna5, .coluna6 {
+        margin: 0;
+    }
+
+    .linha1__proj, .linha2__proj {
+        padding: 3.620689655vw 3.017241379vw;
+    }
+}
+
+@media screen and (max-width: 918px) {
+    .projetos {
+        gap: 2.178649237vw;
+    }
+
+    .linha1__proj, .linha2__proj {
+        padding: 2.941176471vw;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .titulo__projetos {
+        font: var(--_360-texto-titulo);
+    }
+
+    .projetos {
+        font: var(--_360-texto-projetos);
+        gap: 2.631578947vw;
+    }
+
+    .linha1__proj, .linha2__proj {
+        padding: 2.763157895vw 2.302631579vw;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .projetos {
+        gap: 3.2vw;
+    }
+
+    .linha1__proj, .linha2__proj {
+        padding: 4.8vw 4vw;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .projetos {
+        gap: 4.6875vw;
+    }
+
+    .linha1__proj, .linha2__proj {
+        padding: 4.0625vw 3.125vw;
+    }
+
+    .linha2__proj {
+        margin-top: 20px;
+    }
+}

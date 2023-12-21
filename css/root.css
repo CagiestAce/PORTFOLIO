@@ -1,0 +1,59 @@
+:root {
+    /* Cores */
+      --fundo: #3b3b40;
+      --cor-secundaria: #d9d9d9;
+      --digitacao: #ffffff;
+      --digitacao2: #000000;
+      --detalhes: #04d99d;
+      --hover: #00C08B;
+      
+    /* Fontes */
+      /* Padrão */
+        --padrao-texto-menu: 500 16px "Inter", sans-serif;
+        --padrao-texto-nome-topo: 100 22px "Inter", sans-serif;
+        --padrao-texto-principal: 800 42.97px "Orbitron", sans-serif;
+        --padrao-texto-titulo: 600 32px "Orbitron", sans-serif;
+        --padrao-texto: 400 20px "Inter", sans-serif;
+        --padrao-texto-botao: 700 20px "Inter", sans-serif;
+        --padrao-texto-projetos: 400 32px "Orbitron", sans-serif;
+        --padrao-texto-titulo-rodape: 500 16px "Inter", sans-serif;
+        --padrao-texto-rodape: 300 12px "Inter", sans-serif;
+        --padrao-texto-nome-rodape: 200 16px "Inter", sans-serif;
+
+      /* 360+ */
+        --_360-texto-menu: 500 10px "Inter", sans-serif;
+        --_360-texto-nome-topo: 100 14px "Inter", sans-serif;
+        --_360-texto-principal: 800 22px "Orbitron", sans-serif;
+        --_360-texto-titulo: 600 16px "Orbitron", sans-serif;
+        --_360-texto: 400 12px "Inter", sans-serif;
+        --_360-texto-botao: 700 13px "Inter", sans-serif;
+        --_360-texto-projetos: 400 15px "Orbitron", sans-serif;
+        --_360-texto-titulo-rodape: 500 12px "Inter", sans-serif;
+        --_360-texto-rodape: 300 10px "Inter", sans-serif;
+        --_360-texto-nome-rodape: 200 12px "Inter", sans-serif;
+    
+      /* OPS   */
+        --ops-texto-titulo-grande: 800 96px "Orbitron", sans-serif;
+        --ops-texto-grande: 400 48px "Inter", sans-serif;
+        --ops-texto-titulo-medio: 800 51.2px "Orbitron", sans-serif;
+        --ops-texto-medio: 400 25.6px "Inter", sans-serif;
+        --ops-texto-titulo-pequeno: 800 18px "Orbitron", sans-serif;
+        --ops-texto-pequeno: 400 10px "Inter", sans-serif;
+
+    /* Efeitos */
+      --sombra-basica-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      --sombra-basica-text-shadow: 0px 4px 4px #000000;
+      --sombra-botao-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.2),
+        0px 7px 13px -3px rgba(0, 0, 0, 0.3), 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+      --sombra-blocos-box-shadow: inset 0px -3px 0px 0px rgba(0, 0, 0, 0.2),
+        0px 7px 13px -3px rgba(0, 0, 0, 0.3), 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+  }
+
+.dark-theme {
+  --fundo: #d9d9d9;
+  --cor-secundaria: #3b3b40;
+  --digitacao: #000000;
+  --digitacao2: #ffffff;
+  --detalhes: #359af2;
+  --hover: #0F84ED;
+}

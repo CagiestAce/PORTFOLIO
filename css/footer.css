@@ -1,0 +1,89 @@
+@import url(root.css);
+
+footer {
+    background-color: var(--cor-secundaria);
+    border-top: solid var(--digitacao2) 1px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    right: 0;
+    left: 0;
+    margin-top: 200px;
+    padding-top: 53.75px;
+    padding-bottom: 53.75px;
+    justify-content: space-around;
+}
+
+.informacoes__decontato {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 310px;
+}
+
+.logo__pequena {
+    margin-right: 24px;
+}
+
+.titulo__informacoesrodape {
+    font: var(--padrao-texto-titulo-rodape);
+    color: var(--digitacao2);
+}
+
+.paragrafo__rodape {
+    font: var(--padrao-texto-rodape);
+    color: var(--digitacao2);
+}
+
+.consultetambem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 760px) {
+    .titulo__informacoes__rodape {
+        font: var(--_360-texto-titulo-rodape);
+    }
+    
+    .paragrafo__rodape {
+        font: var(--_360-texto-rodape);    
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .informacoes__decontato {
+        width: 45%;
+        margin-right: 4.6vw;
+        margin-top: 20px;
+    }
+
+    .logo__rodape-pequeno, .github-icone, .linkedin-icone {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .informacoes__decontato {
+        width: 55%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    footer {
+        margin-top: 100px;
+        align-self: center;
+    }
+
+    .informacoes__decontato {
+        width: 65%;
+        margin-top: 20px;
+    }
+}

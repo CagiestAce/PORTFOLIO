@@ -1,0 +1,37 @@
+@import url(root.css);
+
+.modal__idioma {
+    border-radius: 24px;
+    background-color: var(--cor-secundaria);
+    color: var(--digitacao2);
+    font: var(--padrao-texto);
+}
+
+.modal__idioma::backdrop { 
+    opacity: 0;
+    
+}
+
+.container__idioma {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: start;
+    justify-content: center;
+    row-gap: 10px;
+    border-radius: 24px;
+}
+
+.br, .en {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 30px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.en {
+    gap: 60px;
+}
