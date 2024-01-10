@@ -6,7 +6,6 @@
     margin-top: 40px;
     flex-direction: column;
     width: 78vw;
-    align-items: center;
 }
 
 .titulo__projetos {
@@ -17,28 +16,101 @@
 }
 
 .projetos {
+    display: grid;
+    grid-template-columns: 24.5vw 24.5vw 24.5vw;
+    grid-template-rows: 216px 216px;
+    text-align: center;
+    align-items: center;
     justify-content: center;
-    display: flex;
+    gap: 30px;
     width: 78vw;
     margin-top: 18px;
-    gap: 3vw;
     font: var(--padrao-texto-projetos);
-    color: var(--digitacao2);
+    color: var(--digitacao);
+    position: relative;
 }
 
-.coluna4, .coluna5, .coluna6 {
-    margin: 30px;
-}
-
-.linha1__proj, .linha2__proj {
-    display: flex;
-    padding: 2.625vw 6.5vw;
-    justify-content: center;
-    align-items: center;
-    border-radius: 24px;
+.item__projeto {
     background-color: var(--cor-secundaria);
-    text-align: center;
     box-shadow: var(--sombra-blocos-box-shadow);
+    border-radius: 24px;
+    padding: 65px 65px;
+    text-wrap: nowrap;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 0.5s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.item__projeto::before {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    color: var(--digitacao);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.item__projeto:hover::before {
+    opacity: 1;
+}
+
+.projeto1 {
+    background-image: url("../IMAGENS-ÍCONES/organo.png");
+    background-position: center top;
+}
+
+.projeto1::before {
+    content: "Organo";
+}
+
+.projeto2 {
+    background-image: url("../IMAGENS-ÍCONES/serenatto.png");
+    background-position: center top;
+}
+
+.projeto2::before {
+    content: "Serenatto";
+}
+
+.projeto3 {
+    background-image: url("../IMAGENS-ÍCONES/meteora.png");
+    background-position: center top;
+}
+
+.projeto3::before {
+    content: "Meteora";
+}
+
+.projeto4 {
+    background-image: url("../IMAGENS-ÍCONES/culturama.png");
+    background-position: center top;
+}
+
+.projeto4::before {
+    content: "Culturama";
+}
+
+.projeto5 {
+    background-image: url("../IMAGENS-ÍCONES/relogio.png");
+    background-position: center center;
+}
+
+.projeto5::before {
+    content: "Relógio em JS";
+}
+
+.projeto6 {
+    background-image: url("../IMAGENS-ÍCONES/alura+.png");
+    background-position: center center;
+}
+
+.projeto6::before {
+    content: "Alura+";
 }
 
 .linha2__proj {
@@ -49,23 +121,11 @@
     .projetos {
         gap: 6.034482759vw;
     }
-
-    .coluna4, .coluna5, .coluna6 {
-        margin: 0;
-    }
-
-    .linha1__proj, .linha2__proj {
-        padding: 3.620689655vw 3.017241379vw;
-    }
 }
 
 @media screen and (max-width: 918px) {
     .projetos {
         gap: 2.178649237vw;
-    }
-
-    .linha1__proj, .linha2__proj {
-        padding: 2.941176471vw;
     }
 }
 
@@ -76,34 +136,23 @@
 
     .projetos {
         font: var(--_360-texto-projetos);
-        gap: 2.631578947vw;
+        gap: 2.7vw;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 216px 216px 216px;
+        width: 78vw;
     }
 
-    .linha1__proj, .linha2__proj {
-        padding: 2.763157895vw 2.302631579vw;
-    }
+
 }
 
 @media screen and (max-width: 375px) {
     .projetos {
         gap: 3.2vw;
     }
-
-    .linha1__proj, .linha2__proj {
-        padding: 4.8vw 4vw;
-    }
 }
 
 @media screen and (max-width: 320px) {
     .projetos {
         gap: 4.6875vw;
-    }
-
-    .linha1__proj, .linha2__proj {
-        padding: 4.0625vw 3.125vw;
-    }
-
-    .linha2__proj {
-        margin-top: 20px;
     }
 }
